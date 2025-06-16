@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions in JavaScript</h1>
+    <h3 id = 't1'></h3>
+    <h3 id = 't2'></h3>
+    <button onclick="add(56)"> CLICK ME</button>
+    <script>
+        function add(x,y){
+            if(y == undefined){
+                y = 2;
+            }
+            document.getElementById('t1').innerHTML = x + y;
+        }
+        
+        var result = function(x, y){return x + y}
+        document.getElementById('t2').innerHTML = result(12, 12)
+    </script>
+</body>
+</html>
